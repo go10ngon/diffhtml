@@ -20,7 +20,6 @@ del {
   width: 100%;
   height: 100%;
   background: rgba(0,0,0,0.2);
-  overflow: auto;
 }
 
 #output{
@@ -29,15 +28,21 @@ del {
     width: 800px;
     padding: 30px;
 }
-
-img{
-max-width: 100%;
-}
 </style>
 <script src="diffhtml.js"></script>
 <script type="text/javascript">
-var originalHTML = '<p>Đây là nội dung gốc</p>';
-var newHTML = '<p>Đây là nội dung thay đổi</p>';
+var originalHTML = '<p class="summary-style">開成町の花「あじさい」を使い、酒蔵周辺の田園を吹く風をイメージして醸した爽快な純米吟醸酒</p><div id="accordion"><div class="card" style="border: none;"><div class="card-header" id="headingOne" style="padding-top: 2px;padding-bottom: 2px;border: none;color: #787c7b;"><p class="mb-0"><span class="btn btn-link" style="color: #787c7b;text-decoration: none;font-size: 14px;"><span>Index</span></span></p></div><div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"><div class="card-body" style="font-size: 14px;background-color: #f7f7f7;padding: 0;"><ol class="ct-ol"><li class="ct-li" style="padding: 8px 0;font-size: 14px;list-style-type: none;border-top: 1px solid #e6e6e6;"><a class="ct-header-article-link" href="#header-article-link-1" style="display: block;color: #787c7b;text-decoration: none !important;cursor: pointer;"> あじさい花酵母を使った爽やかな日本酒。 </a></li><li class="ct-li" style="padding: 8px 0;font-size: 14px;list-style-type: none;border-top: 1px solid #e6e6e6;"><a class="ct-header-article-link" href="#header-article-link-2" style="display: block;color: #787c7b;text-decoration: none !important;cursor: pointer;"> 開成町あじさいまつり。 </a></li><li class="ct-li" style="padding: 8px 0;font-size: 14px;list-style-type: none;border-top: 1px solid #e6e6e6;"><a class="ct-header-article-link" href="#header-article-link-3" style="display: block;color: #787c7b;text-decoration: none !important;cursor: pointer;"> 開成町の田園を駆ける風をイメージした味わい。 </a></li></ol></div></div></div></div><h2 class="ct-header-article" id="header-article-link-1"> あじさい花酵母を使った爽やかな日本酒。 </h2><p class="ct-p" style="margin-bottom: 15px; margin-top: 15px;"> &nbsp; あじさいは開成町のタウンロゴのモチーフにもなっている町のシンボルです。<br>瀬戸酒造店周辺にも、田んぼのあぜ道に沿ってたくさんのあじさいが植えられています。<br>そんな開成町のあじさいの花から抽出した酵母を使って、<br>町ならではの日本酒をつくりました。 </p><h2 class="ct-header-article" id="header-article-link-2"> 開成町あじさいまつり。 </h2><p class="ct-p" style="margin-bottom: 15px; margin-top: 15px;"> 毎年、梅雨の時期には開成町あじさいまつりが開催されます。<br>他のあじさいまつりと違って、<br>景色がひらけた田園風景に咲き並ぶあじさいの花は珍しく、たくさんの人で賑わいます。<br>町の人々が大切に育ててきたあじさい。その想いを、日本酒にも込めました。 </p><h2 class="ct-header-article" id="header-article-link-3"> 開成町の田園を駆ける風をイメージした味わい。 </h2><p class="ct-p" style="margin-bottom: 15px; margin-top: 15px;"> 開成町には美しい田園風景が今なお残っており、夏には青々とした稲が一面に広がります。<br>風が吹くと稲が揺れ、緑の陰影が足跡のように流れていく様を見ることができます。<br>それはまるで“風の道”のようです。<br>そんな開成町の風景をイメージして、爽やかで澄んだ味わいの日本酒に仕上げました。 </p>';
+
+var newHTML = '<p class="summary-style">開成町の花「あじさい」を使い、酒蔵周辺の田園EDITED HEREジして醸した爽快な純米吟醸酒</p><div id="accordion"><div class="card" style="border: none;"><div class="card-header" id="headingOne" style="padding-top: 2px;padding-bottom: 2px;border: none;color: #787c7b;"><p class="mb-0"><span class="btn btn-link" style="color: #787c7b;text-decoration: none;font-size: 14px;"><span>Index</span></span></p></div><div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion"><div class="card-body" style="font-size: 14px;background-color: #f7f7f7;padding: 0;"><ol class="ct-ol"><li class="ct-li" style="padding: 8px 0;font-size: 14px;list-style-type: none;border-top: 1px solid #e6e6e6;"><a class="ct-header-article-link" href="#header-article-link-1" style="display: block;color: #787c7b;text-decoration: none !important;cursor: pointer;"> あじさい花酵母を使った爽やかな日本酒。 </a></li><li class="ct-li" style="padding: 8px 0;font-size: 14px;list-style-type: none;border-top: 1px solid #e6e6e6;"><a class="ct-header-article-link" href="#header-article-link-2" style="display: block;color: #787c7b;text-decoration: none !important;cursor: pointer;"> 開成町あじさいまつり。 </a></li><li class="ct-li" style="padding: 8px 0;font-size: 14px;list-style-type: none;border-top: 1px solid #e6e6e6;"><a class="ct-header-article-link" href="#header-article-link-3" style="display: block;color: #787c7b;text-decoration: none !important;cursor: pointer;"> 開成町の田園を駆ける風をイメージした味わい。 </a></li></ol></div></div></div></div><h2 class="ct-header-article" id="header-article-link-1"> あじさい花酵母を使った爽やかな日本酒。 </h2><p class="ct-p" style="margin-bottom: 15px; margin-top: 15px;"> &nbsp; あじさいは ADD TEXT ーフにもなっている町のシンボルです。<br>瀬戸酒造店植えられています。<br>そんな開成町のあじさいの花から抽出した酵母を使って、<br>町ならではの日本酒をつくりました。 </p><h2 class="ct-header-article" id="header-article-link-2"> 開成町あじさいまつり。 </h2><p class="ct-p" style="margin-bottom: 15px; margin-top: 15px;"> 毎年、梅雨の時期には開成町あじさいまつりが開催されます。<br>他のあじさいまつりと違って、<br>景色がひらけた田園風景に咲き並ぶあじさいの花は珍しく、たくさんの人で賑わいます。<br>町の人々が大切に育ててきたあじさい。その想いを、日本酒にも込めました。 </p><h2 class="ct-header-article" id="header-article-link-3"> 開成町の田園を駆ける風をイメージした味わい。 </h2><p class="ct-p" style="margin-bottom: 15px; margin-top: 15px;"> 開成町には美しい田園風景が今なお残っており、夏には青々とした稲が一面に広がります。<br>風が吹くと稲が揺れ、緑の陰影が足跡のように流れていく様を見ることができます。<br>それはまるで“風の道”のようです</p>';
+
 // Diff HTML strings
-var output = diffhtml(originalHTML, newHTML);
+var output = htmldiff(originalHTML, newHTML);
+
+// Show HTML diff output as HTML (crazy right?)!
+document.getElementById("output").innerHTML = output;
+document.getElementById("new").innerHTML = newHTML;
+
+function show(){
+document.getElementById("dialog").style.display = 'block';
+}
 </script>
