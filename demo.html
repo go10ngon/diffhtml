@@ -1,0 +1,43 @@
+<div id="new"></div>
+<button onclick="show()">変化を見る</button>
+<div id="dialog" style="display: none"><div id="output"></div></div>
+<style type="text/css">
+ins {
+    text-decoration: none;
+    background-color: #d4fcbc;
+}
+
+del {
+    text-decoration: line-through;
+    background-color: #fbb6c2;
+    color: #555;
+}
+
+#dialog{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.2);
+  overflow: auto;
+}
+
+#output{
+    background: #fff;
+    margin: 40px auto;
+    width: 800px;
+    padding: 30px;
+}
+
+img{
+max-width: 100%;
+}
+</style>
+<script src="diffhtml.js"></script>
+<script type="text/javascript">
+var originalHTML = '<p>Đây là nội dung gốc</p>';
+var newHTML = '<p>Đây là nội dung thay đổi</p>';
+// Diff HTML strings
+var output = diffhtml(originalHTML, newHTML);
+</script>
